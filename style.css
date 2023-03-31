@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400&display=swap');
+;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    font-family: 'Crimson Text', serif;
+    font-size: 62.5%;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(pic/9.jpg)
+}
+#header{
+    /* border:2px solid blue;   */
+    color: aliceblue; 
+    padding: 5rem;
+
+}
+
+.container{
+    /* padding: 5rem; */
+    border: 6px solid ;
+    position: relative;
+    width: 150rem;
+    height: 30rem;
+    overflow: auto;
+    
+
+}
+.pic_container{
+    height: 96%;
+    position: absolute;
+    display: flex;
+    gap: 5rem;
+    width: auto;
+
+    
+}
+img{
+    height: 110%;
+    border-radius: 5rem;
+    object-fit: cover;
+    transform: scale(.7);
+    transition: all 400ms ease;
+    z-index: 1;
+
+
+}
+li{
+    height: inherit;
+    border: 5rem;
+    width: 35rem;
+    justify-content: center;
+
+}
+img:hover { 
+    transform: scale(.7);
+    z-index: 3;
+
+}
